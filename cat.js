@@ -1,34 +1,32 @@
-class Cat{
+class Cat {
     name;
-    catspeed;
     weight;
-    status;
-    sounding;
-
-    constructor(name, catspeed, weight, status, sounding) {
+    speed;
+    constructor(name, weight, speed) {
         this.name = name;
-        this.catspeed = catspeed;
+        this.speed = speed;
         this.weight = weight;
-        this.status = status;
-        this.sounding = sounding;
+    }
+    setSpeed(speed){
+        this.speed = speed;
+    }
+    setWeight(weight){
+        this.weight = weight;
     }
     setName(name){
         this.name = name;
     }
-    setSpeed(catspeed){
-        this.catspeed = catspeed;
+    getSpeed(){
+        return this.speed;
     }
-    setWeight(weight){
-        this.weight = weight;
+    getWeight(){
+        return this.weight;
+    }
+    getName(){
+        return this.name;
+    }
+    sound(){
+        console.log("méo mẻo mèo meow")
+    }
 
-    }setStatus(run,){
-        this.status = status;
-
-    }setSounding(sounding){
-        this.sounding = sounding;
-    }
-    Catchesmouse(ouse){
-        if( this.catspeed > mouse.mousespeed && );
-        return this.catspeed('max speed');
-    }
 }

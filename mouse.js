@@ -1,30 +1,33 @@
-class Mouse{
+class Mouse {
     name;
-    speed;
     weight;
+    speed;
     status;
-    sounding;
-
-    constructor(name, mousespeed, weight, status, sounding) {
+    constructor(name, weight, speed, status) {
         this.name = name;
-        this.mousespeed = mousespeed;
+        this.speed = speed;
         this.weight = weight;
-        this.status = status;
-        this.sounding = sounding;
+        this.status = status
+    }
+    getStatus(){
+        return this.status;
+    }
+    setSpeed(speed){
+        this.speed = speed;
+    }
+    setWeight(weight){
+        this.weight = weight;
     }
     setName(name){
         this.name = name;
     }
-    setSpeed(mousespeed){
-        this.mousespeed = mousespeed;
+    getSpeed(){
+        return this.speed;
     }
-    setWeight(weight){
-        this.weight = weight;
-
-    }setStatus(status){
-        this.status = status;
-
-    }setSounding(sounding){
-        this.sounding = sounding;
+    getWeight(){
+        return this.weight;
+    }
+    getName(){
+        return this.name;
     }
 }
